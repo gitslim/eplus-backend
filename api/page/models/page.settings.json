@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "default.paragraph",
+        "default.seo",
+        "default.slider"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "sidebar": {
+      "type": "dynamiczone",
+      "components": [
+        "default.paragraph",
+        "default.image"
+      ]
+    },
+    "slug": {
+      "type": "uid"
+    }
+  }
+}

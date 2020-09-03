@@ -1,0 +1,11 @@
+node_modules
+public/uploads
+build
+.tmp
+.idea
+.cache
+skaffold.yaml
+k8s
+.editorconfig
+.env.example
+README.md
