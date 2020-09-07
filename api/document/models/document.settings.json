@@ -15,16 +15,19 @@
       "unique": true
     },
     "file": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files"
+        "files",
+        "images",
+        "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     },
     "date": {
-      "type": "date"
+      "type": "date",
+      "required": true
     }
   }
 }
