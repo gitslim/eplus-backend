@@ -1,25 +1,30 @@
 {
   "kind": "collectionType",
-  "collectionName": "news_articles",
+  "collectionName": "articles",
   "info": {
-    "name": "NewsArticle"
+    "name": "Article"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "date": {
-      "type": "datetime",
-      "required": true
-    },
     "slug": {
       "type": "uid"
     },
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
     "content": {
+      "type": "dynamiczone",
+      "components": [
+        "default.image",
+        "default.paragraph"
+      ]
+    },
+    "sidebar": {
       "type": "dynamiczone",
       "components": [
         "default.image",
@@ -33,12 +38,7 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true
-    },
-    "summary": {
-      "type": "richtext",
-      "required": true,
-      "maxLength": 400
+      "required": false
     }
   }
 }

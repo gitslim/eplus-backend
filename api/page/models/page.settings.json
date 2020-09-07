@@ -13,12 +13,13 @@
       "type": "dynamiczone",
       "components": [
         "default.paragraph",
-        "default.seo",
-        "default.slider"
+        "default.image"
       ]
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "sidebar": {
       "type": "dynamiczone",
