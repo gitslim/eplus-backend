@@ -1,11 +1,17 @@
-# Бэкенд сайта [Энергияплюс.рф](http://xn--c1adkmgpem4hrai.xn--p1ai/)
+# Backend for site [Энергияплюс.рф](http://xn--c1adkmgpem4hrai.xn--p1ai/)
 
-### Установка:
+### Components:
+- [strapi](https://strapi.io/)
+- graphql
+- k8s deployment with [skaffold](https://skaffold.dev/)
+
+### Install dependencies:
 - `yarn`
 
-### Запуск в режиме разработки:
+### Run in development mode:
 - `yarn develop`
 
-### Запуск production
+### Build and run in production mode
 - `yarn build`
 - `yarn start`
+
