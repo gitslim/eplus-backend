@@ -14,7 +14,12 @@
       "required": true
     },
     "answer": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }
