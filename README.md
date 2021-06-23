@@ -15,3 +15,5 @@
 - `yarn build`
 - `yarn start`
 
+TODO:
+- [ ] Optimize docker image size
